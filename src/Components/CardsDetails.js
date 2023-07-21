@@ -64,9 +64,12 @@ const remove = (item)=>{
             data.map((ele)=>{
               return (
                 <>
-                <div className="items_img">
+                <div key={ele.id} className="items_img">
+                <img src={ele.imgdata} alt="" />
+                </div>
+                {/* <div className="items_img">
               <img src={ele.imgdata} alt="" />
-            </div>
+            </div> */}
 
             <div className="details">
               <Table>
